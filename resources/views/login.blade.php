@@ -7,6 +7,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Login</title>
+    a
 </head>
 <body>
 <section class="bg-gray-50 dark:bg-gray-900">
