@@ -50,4 +50,21 @@ Route::post('/salva-usuario',
 
 })->name('salva-usuario');
 
-route::view('/login', 'login');
+Route::view('/login', 'login');
+
+Route::post('/logar', function (Request $request) {
+
+    $credentials = $request->validate([
+        'email' => ['required', 'email'],
+        'senha' => ['required'],
+    ]);
+
+    if (Auth::attempt($credentials)) {
+        $request->session()->regenerate();
+
+        // return redirect()->intended('dashboard');
+        return "logado com sucesso";
+    }
+
+    return "Erro ao logar, usuário ou senha incorreto!";
+});
