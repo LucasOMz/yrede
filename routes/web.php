@@ -49,3 +49,5 @@ Route::post('/salva-usuario',
     return "Salvo com sucesso!!";
 
 })->name('salva-usuario');
+
+route::view('/login', 'login');
