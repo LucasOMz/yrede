@@ -60,6 +60,8 @@
 
         <button type="submit" class="btn btn-success">Salvar</button>
 
+        <p>Já possui conta? <a href="http://127.0.0.1:8000/login" class="font-medium text-primary-600 hover:underline dark:text-primary-500">Logar</a></p>
+
 
       
     </form>
