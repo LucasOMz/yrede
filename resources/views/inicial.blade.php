@@ -10,39 +10,38 @@
 
     <div class="max-w-xl mx-auto">
 
-        <h1 class="text-3xl font-bold mb-4">Bem-vindo à página inicial</h1>
+        <h1 class="text-3xl font-bold mb-4">Bem-vindo a página inicial</h1>
 
         <nav class="mb-8">
-            <ul>
-                <li class="mb-2">
-                    <a href="/cadastra-usuario" class="btn rounded-full bg-blue-500 hover:bg-blue-300 transition-all px-4 py-2">Criar Conta</a>
-                </li> <br>
-                
-                <li class="mb-2">
-                    <a href="/login" class="btn rounded-full bg-blue-500 hover:bg-blue-300 transition-all px-4 py-2">Faça Login</a>
-                </li> <br>
-                
-                <li class="mb-2">
-                    <a href="/cria-post" class="btn rounded-full bg-blue-500 hover:bg-blue-300 transition-all px-4 py-2">Nova Postagem</a>
-                </li> <br>
-            </ul>
+        <ul class="flex space-x-4">
+    <li>
+        <a href="/cadastra-usuario" class="px-4 py-2 rounded-full bg-blue-500 hover:bg-blue-300 transition-all">Criar Conta</a>
+    </li>
+    
+    <li>
+        <a href="/login" class="px-4 py-2 rounded-full bg-blue-500 hover:bg-blue-300 transition-all">Faça Login</a>
+    </li>
+    
+    <li>
+        <a href="/cria-post" class="px-4 py-2 rounded-full bg-blue-500 hover:bg-blue-300 transition-all">Nova Postagem</a>
+    </li>
+</ul>
+
         </nav>
 
     </div>
 
     <h1>Posts:</h1>
-    <h1>___________________________________________________________________________________________________________</h1>
 
 @foreach ($posts as $post)
-    <div>
+    <div class="border border-black rounded p-4 mb-4">
         <div>
-            Postagem - {{$post->id}}
+            Postagem - {{ $post->user->usuario }}
         </div>
-{{$post->mensagem}}
+        <div>
+            {{ $post->mensagem }}
+        </div>
     </div>
-
-    <h1>____________________________________________________________________________________________________________</h1>
-
 @endforeach
 
 </body>
