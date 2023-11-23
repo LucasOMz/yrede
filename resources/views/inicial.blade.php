@@ -10,7 +10,7 @@
 
     <div class="max-w-xl mx-auto">
 
-        <h1 class="text-3xl font-bold mb-4">Bem-vindo ao Meu Site</h1>
+        <h1 class="text-3xl font-bold mb-4">Bem-vindo à página inicial</h1>
 
         <nav class="mb-8">
             <ul>
