@@ -10,6 +10,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     
     <title>cadastro de usuários</title>
+    <br>
+    <p>º Clique aqui para ir ao <a href="/" class="font-medium text-primary-600 hover:underline dark:text-primary-500">INÍCIO</a></p>
 </head>
 <body>
     <h1 class="w-full text-center text-xl font-bold">Cadastro de Usuários</h1>
